@@ -38,10 +38,6 @@
   font-weight: bold;
 }
 
-.nav-list__link--active {
-  color: yellow;
-}
-
 .home {
   overflow: hidden;
   position: relative;
