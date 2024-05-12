@@ -35,6 +35,14 @@
   flex-wrap: wrap;
 }
 
+.nav-list__link:hover,
+.footer__quicklink:hover,
+.footer__usefullink:hover,
+.footer__share__link:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
 .nav-list__link,
 .footer__share__link {
   text-decoration: none;
@@ -127,6 +135,52 @@
 .subjects__div p {
   margin: 0;
   font-size: 14px;
+}
+
+.courses {
+  overflow: hidden;
+}
+
+.courses__slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.courses__slide {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .courses__slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .courses__slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+.courses__image {
+  max-width: 100%;
+}
+
+.courses__content {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.courses__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.courses__description {
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 .footer {
