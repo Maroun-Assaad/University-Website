@@ -24,6 +24,8 @@
   </head>
 
   <body class="body">
+    <!-- header section starts -->
+
     <header class="header">
       <a href="#" class="logo"> <i class="fa fa-university"></i> University </a>
 
@@ -34,38 +36,59 @@
       </ul>
     </header>
 
+    <!-- header section ends -->
+
     <!-- account form section starts  -->
 
-    <div class="account-form">
-      <div id="close-form" class="fas fa-times"></div>
-
-      <div class="buttons">
-        <span class="btn active login-btn">login</span>
-        <span class="btn register-btn">register</span>
+    <div class="account__form">
+      <div class="account__tabs">
+        <span class="tab login active">login</span>
+        <span class="tab register">register</span>
       </div>
 
-      <form class="login-form active" action="">
+      <form class="login__form" action="">
         <h3>login now</h3>
-        <input type="email" placeholder="enter your email" class="box" />
-        <input type="password" placeholder="enter your password" class="box" />
-        <div class="flex">
+        <input
+          class="account__input"
+          type="email"
+          placeholder="enter your email"
+          required
+        />
+        <input
+          class="account__input"
+          type="password"
+          placeholder="enter your password "
+          required
+        />
+        <div class="account__checkbox">
           <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me">remember me</label>
-          <a href="#">forgot password?</a>
+          <label for="remember-me">Remember Me</label>
+          <a class="account__forgot-password" href="#">Forgot password?</a>
         </div>
-        <input type="submit" value="Login Now" class="btn" />
+        <input class="account__button" type="submit" value="Login Now" />
       </form>
 
-      <form class="register-form" action="">
+      <form class="register__form" action="">
         <h3>Register Now</h3>
-        <input type="email" placeholder="enter your email" class="box" />
-        <input type="password" placeholder="enter your password" class="box" />
         <input
+          class="account__input"
+          type="email"
+          placeholder="enter your email"
+          required
+        />
+        <input
+          class="account__input"
+          type="password"
+          placeholder="enter your password"
+          required
+        />
+        <input
+          class="account__input"
           type="password"
           placeholder="confirm your password"
-          class="box"
+          required
         />
-        <input type="submit" value="Register Now" class="btn" />
+        <input class="account__button" type="submit" value="Register Now" />
       </form>
     </div>
 
