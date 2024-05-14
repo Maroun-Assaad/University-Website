@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const registerTab = document.querySelector(".tab.register");
   const loginForm = document.querySelector(".login__form");
   const registerForm = document.querySelector(".register__form");
+  const placeholderImage = document.querySelector(".placeholder__image");
 
   // Event listener for login tab
   loginTab.addEventListener("click", function () {
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     registerTab.classList.remove("active");
     loginForm.style.display = "block";
     registerForm.style.display = "none";
+    placeholderImage.style.display = "none"; // Hide placeholder image
   });
 
   // Event listener for register tab
@@ -31,5 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
     loginTab.classList.remove("active");
     registerForm.style.display = "block";
     loginForm.style.display = "none";
+    placeholderImage.style.display = "none"; // Hide placeholder image
   });
+
+  // Display placeholder image initially
+  placeholderImage.style.display = "block";
 });

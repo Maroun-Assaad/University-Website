@@ -270,3 +270,128 @@
   text-align: center;
   margin-top: 20px;
 }
+
+/* account form style */
+.account__form {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 100.2);
+}
+
+.account__tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  user-select: none;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 20px 20px;
+}
+
+.tab:hover {
+  color: blue;
+}
+
+.tab.active {
+  background-color: aqua;
+}
+
+.login__form,
+.register__form {
+  display: none;
+}
+
+.account__input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.account__input::placeholder {
+  color: #333;
+  text-transform: capitalize;
+}
+
+.account__checkbox {
+  margin-bottom: 20px;
+}
+
+.checkbox label {
+  margin-left: 5px;
+}
+
+.account__forgot-password {
+  margin-left: 100px;
+  color: #333;
+}
+
+.account__forgot-password:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.account__heading {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.account__button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.account__button:hover {
+  background-color: #0056b3;
+}
+
+.placeholder__image {
+  max-width: 100%;
+  height: auto;
+  margin: 40px auto;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .placeholder__image {
+    width: 200px; /* Decrease width for smaller screens */
+    height: 200px; /* Decrease height for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for spacing */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .account__form {
+    padding: 15px;
+  }
+
+  .account__tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tab {
+    width: 48%;
+  }
+}
