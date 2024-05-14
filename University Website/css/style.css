@@ -1,20 +1,24 @@
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body styles */
 .body {
   background-color: gray;
   font-family: Arial, sans-serif;
 }
 
+/* Container styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Header styles */
 .header {
   background-color: #333;
   color: white;
@@ -58,6 +62,7 @@
   font-weight: bold;
 }
 
+/* Home styles */
 .home {
   overflow: hidden;
   position: relative;
@@ -81,6 +86,7 @@
   height: 500px;
 }
 
+/* Content styles */
 .content {
   padding: 20px;
 }
@@ -100,12 +106,14 @@
   background-color: #087bf7;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   .home__info {
     height: 300px;
   }
 }
 
+/* Subjects styles */
 .subjects {
   text-align: center;
   padding: 50px 0;
@@ -160,6 +168,7 @@
   color: #777;
 }
 
+/* Courses styles */
 .courses {
   overflow: hidden;
   padding: 20px 0;
@@ -205,6 +214,7 @@
   margin-bottom: 15px;
 }
 
+/* Footer styles */
 .footer {
   background-color: #333;
   color: #fff;
@@ -271,22 +281,20 @@
   margin-top: 20px;
 }
 
-/* account form style */
+/* Account form styles */
 .account__form {
-  width: 400px;
-  height: 400px;
+  width: 90%; /* Adjust width for smaller screens */
+  max-width: 400px; /* Limit width for larger screens */
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 100.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .account__tabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  justify-content: space-around; /* Center tabs on smaller screens */
   margin-bottom: 20px;
 }
 
@@ -296,10 +304,6 @@
   padding: 10px 20px;
   background-color: #f0f0f0;
   border-radius: 20px 20px;
-}
-
-.tab:hover {
-  color: blue;
 }
 
 .tab.active {
@@ -313,10 +317,10 @@
 
 .account__input {
   width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
+  padding: 10px; /* Increase padding for better touch experience */
+  margin-bottom: 15px; /* Increase margin for better spacing on smaller screens */
   border: 1px solid #ccc;
-  border-radius: 50px;
+  border-radius: 5px; /* Decrease border radius for a more modern look */
 }
 
 .account__input::placeholder {
@@ -325,15 +329,11 @@
 }
 
 .account__checkbox {
-  margin-bottom: 20px;
-}
-
-.checkbox label {
-  margin-left: 5px;
+  margin-bottom: 15px; /* Increase margin for better spacing on smaller screens */
 }
 
 .account__forgot-password {
-  margin-left: 100px;
+  margin-left: auto; /* Move forgot password link to the right */
   color: #333;
 }
 
@@ -345,13 +345,12 @@
 .account__heading {
   font-size: 18px;
   text-transform: capitalize;
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* Increase margin for better spacing on smaller screens */
 }
 
 .account__button {
-  display: block;
   width: 100%;
-  padding: 10px;
+  padding: 12px; /* Increase padding for better touch experience */
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -367,7 +366,7 @@
 .placeholder__image {
   max-width: 100%;
   height: auto;
-  margin: 40px auto;
+  margin: 20px auto; /* Decrease margin for better spacing on smaller screens */
   object-fit: cover;
   display: block;
   margin-bottom: 20px;
@@ -384,11 +383,6 @@
 @media only screen and (max-width: 600px) {
   .account__form {
     padding: 15px;
-  }
-
-  .account__tabs {
-    display: flex;
-    justify-content: space-around;
   }
 
   .tab {
