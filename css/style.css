@@ -198,7 +198,9 @@
 
 @media screen and(max-width: 900px) {
   .subject {
-    width: calc(50% - 20px);
+    width: calc(80% - 20px);
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -250,10 +252,15 @@
   margin-bottom: 15px;
 }
 
+/* 900px for mobile */
 @media screen and (max-width: 900px) {
-  /* 900px for mobile */
+  .courses__slide {
+    width: calc(80% - 20px); /* Adjust width for mobile */
+  }
+
   .courses__slider {
     flex-direction: column;
+    align-items: center;
   }
 }
 
