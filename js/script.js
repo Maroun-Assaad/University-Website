@@ -39,3 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // Display placeholder image initially
   placeholderImage.style.display = "block";
 });
+
+// read more button
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleDescription = function (event) {
+    event.preventDefault(); // Prevent default link behavior
+
+    const description =
+      this.closest(".courses__slide").querySelector(".description"); // Find the description element relative to the button
+
+    // Toggle max-height property
+    if (description.style.maxHeight) {
+      description.style.maxHeight = null;
+      this.textContent = "Read More";
+    } else {
+      description.style.maxHeight = description.scrollHeight + "px";
+      this.textContent = "Read Less";
+    }
+  };
+
+  const readMoreButtons = document.querySelectorAll(".read-more");
+  readMoreButtons.forEach((button) => {
+    button.addEventListener("click", toggleDescription);
+  });
+});
